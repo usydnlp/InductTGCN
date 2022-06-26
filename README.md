@@ -6,4 +6,8 @@ This repository contains code for paper [InducT-GCN: Inductive Graph Convolution
 </h3>
 
 ## How to Use
+### Reproducing results
 Simply run `python main.py --dataset 'R8' --train_size 0.05`
+### Arguments description
+
+
