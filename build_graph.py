@@ -73,7 +73,7 @@ def get_adj(tokenize_sentences,train_size,word_id_map,word_list,args):
         count = word_pair_occurrence[word_pair]
         word_freq_i = word_occurrence[i]
         word_freq_j = word_occurrence[j]
-        pmi = log((count * total_W) / (word_freq_i * word_freq_j)) * args.edge_mask
+        pmi = log((count * total_W) / (word_freq_i * word_freq_j)) 
         if pmi <=0:
             continue
         row.append(train_size + i)
