@@ -13,7 +13,7 @@ import torch.nn as nn
 from sklearn.metrics import classification_report
 
 parser = argparse.ArgumentParser()
-parser.add_argument('--dataset', type=str, default='R8', help='Dataset string.')
+parser.add_argument('--dataset', type=str, default='R8', help='Dataset string: R8, R52, OH, 20NGnew, MR')
 parser.add_argument('--train_size',  type=float, default=1, help='If it is larger than 1, it means the number of training samples. If it is from 0 to 1, it means the proportion of the original training set.')
 parser.add_argument('--test_size',  type=float, default=1, help='If it is larger than 1, it means the number of training samples. If it is from 0 to 1, it means the proportion of the original training set.')
 parser.add_argument('--remove_limit', type=int, default=2, help='Remove the words showing fewer than 2 times')
