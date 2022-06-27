@@ -17,7 +17,7 @@ parser.add_argument('--dataset', type=str, default='R8', help='Dataset string: R
 parser.add_argument('--train_size',  type=float, default=1, help='If it is larger than 1, it means the number of training samples. If it is from 0 to 1, it means the proportion of the original training set.')
 parser.add_argument('--test_size',  type=float, default=1, help='If it is larger than 1, it means the number of training samples. If it is from 0 to 1, it means the proportion of the original training set.')
 parser.add_argument('--remove_limit', type=int, default=2, help='Remove the words showing fewer than 2 times')
-parser.add_argument('--use_gpu', type=bool, default=True, help='Whether to use GPU, if True and no GPU available, will use CPU instead.')
+parser.add_argument('--use_gpu', type=int, default=1, help='Whether to use GPU, 1 means True and 0 means False. If True and no GPU available, will use CPU instead.')
 parser.add_argument('--shuffle_seed',type = int, default = None, help="If not specified, train/val is shuffled differently in each experiment")
 parser.add_argument('--hidden_dim',type = int, default = 200, help="The hidden dimension of GCN model")
 parser.add_argument('--dropout',type = float, default = 0.5, help="The dropout rate of GCN model")
@@ -26,7 +26,7 @@ parser.add_argument('--weight_decay',type = float, default = 0, help="Weight dec
 parser.add_argument('--early_stopping',type = int, default = 10, help="Number of epochs of early stopping.")
 parser.add_argument('--epochs',type = int, default = 200, help="Number of maximum epochs")
 parser.add_argument('--multiple_times',type = int, default = 10, help="Running multiple experiments, each time the train/val split is different")
-parser.add_argument('--easy_copy',type = bool, default = True, help="For easy copy of the experiment results")
+parser.add_argument('--easy_copy',type = int, default = 1, help="For easy copy of the experiment results. 1 means True and 0 means False.")
 
 args = parser.parse_args()
 
