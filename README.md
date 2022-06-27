@@ -8,8 +8,6 @@ This repository contains code for paper [InducT-GCN: Inductive Graph Convolution
 ## How to Use
 ### Reproducing results
 Simply run `python main.py --dataset 'R8' --train_size 0.05`
-
-Part of the code is inspired by https://github.com/tkipf/pygcn and https://github.com/yao8839836/text_gcn, but has been modified.
 ### Arguments description
 | Argument     | Default   | Description |
 | ----------- | ----------- |----------- |
@@ -17,7 +15,7 @@ Part of the code is inspired by https://github.com/tkipf/pygcn and https://githu
 | train_size  | 1 | If it is larger than 1, it means the number of training samples. If it is from 0 to 1, it means the proportion of the original training set.        |
 | test_size  | 1 | If it is larger than 1, it means the number of training samples. If it is from 0 to 1, it means the proportion of the original training set.|
 | remove_limit  | 2 | Remove the words showing fewer than 2 times |
-| use_gpu  | True | Whether to use GPU, if True and no GPU available, will use CPU instead. |
+| use_gpu  | 1 | Whether to use GPU, 1 means True and 0 means False. If True and no GPU available, will use CPU instead. |
 | shuffle_seed  | None | If not specified, train/val is shuffled differently in each experiment. |
 | hidden_dim  | 200 | The hidden dimension of GCN model |
 | dropout  | 0.5 | The dropout rate of GCN model |
@@ -26,7 +24,7 @@ Part of the code is inspired by https://github.com/tkipf/pygcn and https://githu
 | early_stopping  | 10 | Number of epochs of early stopping |
 | epochs  | 200 | Number of maximum epochs |
 | multiple_times  | 10 | Running multiple experiments, each time the train/val split is different |
-| easy_copy  | True | For easy copy of the experiment results |
+| easy_copy  | 1 | For easy copy of the experiment results. 1 means True and 0 means False. |
 
 ## Citation
 If you find this paper useful, please cite it by 
@@ -39,3 +37,6 @@ If you find this paper useful, please cite it by
 }
 ```
 Since the conference is not held yet, the citation is arXiv version for now.
+
+## Acknowledgement
+Part of the code is inspired by https://github.com/tkipf/pygcn and https://github.com/yao8839836/text_gcn, but has been modified.
