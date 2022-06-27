@@ -8,10 +8,11 @@ This repository contains code for paper [InducT-GCN: Inductive Graph Convolution
 ## How to Use
 ### Reproducing results
 Simply run `python main.py --dataset 'R8' --train_size 0.05`
+
 Part of the code is inspired by https://github.com/tkipf/pygcn and https://github.com/yao8839836/text_gcn, but has been modified.
 ### Arguments description
 | Argument     | Default   | Description |
-| ----------- | ----------- |
+| ----------- | ----------- |----------- |
 | dataset | R8 | Dataset string: R8, R52, OH, 20NGnew, MR       |
 | train_size  | 1 | If it is larger than 1, it means the number of training samples. If it is from 0 to 1, it means the proportion of the original training set.        |
 | test_size  | 1 | If it is larger than 1, it means the number of training samples. If it is from 0 to 1, it means the proportion of the original training set.|
@@ -29,10 +30,12 @@ Part of the code is inspired by https://github.com/tkipf/pygcn and https://githu
 
 ## Citation
 If you find this paper useful, please cite it by 
-`@article{wang2022induct,
+```
+@article{wang2022induct,
   title={InducT-GCN: Inductive Graph Convolutional Networks for Text Classification},
   author={Wang, Kunze and Han, Soyeon Caren and Poon, Josiah},
   journal={arXiv preprint arXiv:2206.00265},
   year={2022}
-}`
+}
+```
 Since the conference is not held yet, the citation is arXiv version for now.
