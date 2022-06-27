@@ -17,7 +17,7 @@ parser.add_argument('--dataset', type=str, default='R8', help='Dataset string: R
 parser.add_argument('--train_size',  type=float, default=1, help='If it is larger than 1, it means the number of training samples. If it is from 0 to 1, it means the proportion of the original training set.')
 parser.add_argument('--test_size',  type=float, default=1, help='If it is larger than 1, it means the number of training samples. If it is from 0 to 1, it means the proportion of the original training set.')
 parser.add_argument('--remove_limit', type=int, default=2, help='Remove the words showing fewer than 2 times')
-parser.add_argument('--use_gpu', type=bool, default=True, help='Whether to use GPU')
+parser.add_argument('--use_gpu', type=bool, default=True, help='Whether to use GPU, if True and no GPU available, will use CPU instead.')
 parser.add_argument('--shuffle_seed',type = int, default = None, help="If not specified, train/val is shuffled differently in each experiment")
 parser.add_argument('--hidden_dim',type = int, default = 200, help="The hidden dimension of GCN model")
 parser.add_argument('--dropout',type = float, default = 0.5, help="The dropout rate of GCN model")
