@@ -13,7 +13,7 @@ Simply run `python main.py --dataset 'R8' --train_size 0.05`
 | ----------- | ----------- |----------- |
 | dataset | R8 | Dataset string: R8, R52, OH, 20NGnew, MR       |
 | train_size  | 1 | If it is larger than 1, it means the number of training samples. If it is from 0 to 1, it means the proportion of the original training set.        |
-| test_size  | 1 | If it is larger than 1, it means the number of training samples. If it is from 0 to 1, it means the proportion of the original training set.|
+| test_size  | 1 | If it is larger than 1, it means the number of training samples. If it is from 0 to 1, it means the proportion of the original test set.|
 | remove_limit  | 2 | Remove the words showing fewer than 2 times |
 | use_gpu  | 1 | Whether to use GPU, 1 means True and 0 means False. If True and no GPU available, will use CPU instead. |
 | shuffle_seed  | None | If not specified, train/val is shuffled differently in each experiment. |
